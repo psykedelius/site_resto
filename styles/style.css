@@ -1,0 +1,45 @@
+.btn{ 
+    border-radius: 5px;
+    background-color: #F7B83A;
+    border: none;
+    height: 30px; 
+    min-width: 128px;
+    width: 160px;
+    max-width: 180px;
+}
+.btn-text{
+    font-size: 16px;
+}
+
+
+.absolute{
+    position: absolute;
+}
+
+footer{
+    background: #F3A140;
+}
+
+.section{
+    
+    min-height: 250px;
+    max-height: 600px;
+   
+}
+.section-title{
+    display: flex;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    justify-content: center;
+    color: white;
+    padding-bottom: 20px;
+}
+.section-desc{
+    display: flex;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal; 
+    font-size: clamp(1rem, 3vw, 2rem);
+    justify-content: center;
+    color: white;
+}
+

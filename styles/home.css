@@ -1,0 +1,60 @@
+
+
+.home{
+        position: relative;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        padding: 0px;
+        margin: 0px; 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+   
+}
+.home-img{
+    width: 100%; 
+    
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+
+.home h1{
+    position : absolute;
+    color: #F3A140;
+    top:40%; 
+    width:100%;
+    text-align: center;
+    font-size: 50px; 
+    -webkit-text-stroke: 1px #454546; /* Set the border color (Bootstrap primary color) */
+}
+.home h2{
+    position : absolute;
+    top:25%; 
+    width:100%;
+    text-align: center;
+}
+
+.section{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ 
+.section-img{
+    height: 100%; 
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+ 
