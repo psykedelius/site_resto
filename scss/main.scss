@@ -149,3 +149,60 @@ footer{
     }
 
 }
+
+.calendar-days{
+    position: relative;
+    display: flex;
+    padding: 30px;
+    .calendar-days-bg{ 
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+        background: #919191;
+        width: 60px;
+        height:60px;
+        border-radius: 5px;
+    }
+    p{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+        color: #F3A140;
+    }
+}
+
+//Calendar
+.calendar {
+    display: grid;
+    
+    grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+    gap: 5px; /* Optional: spacing between days */
+    max-width: 400px; /* Adjust width as needed */
+  }
+  
+  .day-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    background-color: #f0f0f0;
+  }
+  
+  .day {
+    text-align: center;
+    padding: 10px;
+    background-color: #e8e8ff;
+    border-radius: 4px;
+    &:hover{
+        background-color: #bbbbc9;
+        border-width: 2px;
+    }
+    transition: all 0.3s;
+  }
+  
+  .empty {
+    visibility: hidden; /* Placeholder to offset the start day */
+  }
