@@ -12,7 +12,7 @@
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
+  --bs-orange: #F3A140;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -12000,9 +12000,6 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
 }
-.hero-scene .hero-scene-content .btn {
-  margin-top: 50px;
-}
 
 .hero-scene h1, .hero-scene .h1 {
   color: #F3A140;
@@ -12015,20 +12012,42 @@ textarea.form-control-lg {
   text-align: center;
 }
 
-.btn {
-  border-radius: 5px;
-  color: #ffffff;
-  background-color: #F7B83A;
+.home-btn {
+  position: relative;
+  background-color: #F3A140;
   border: none;
-  height: 30px;
-  min-width: 128px;
-  width: 160px;
-  max-width: 180px;
+  width: 180px;
+  height: 40px;
 }
-.btn .p {
-  font-size: 16px;
+.home-btn p {
+  position: absolute;
+  color: #f0f0f0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-btn:hover {
+  background-color: #c78534;
+}
+.home-btn:hover p {
+  color: #f0f0f0;
 }
 
+/*.btn{  
+
+    border-radius: 5px;
+    color: $btn-primary;
+    background-color: #F7B83A;
+    border: none;
+    height: 30px; 
+    min-width: 128px;
+    width: 160px;
+    max-width: 180px;
+    .p{
+        font-size: 16px; 
+    }
+
+}*/
 .absolute {
   position: absolute;
 }
@@ -12081,12 +12100,35 @@ footer {
   color: rgb(255, 255, 255);
   opacity: 1;
 }
+.image-card:hover .action-image-buttons {
+  opacity: 1;
+}
 .image-card:hover img {
   filter: brightness(0.3);
+}
+.image-card .action-image-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .image-card img {
   filter: brightness(1);
   transition: all 0.3s;
+}
+.image-card .btn-overlay {
+  border: 2px solid;
+  color: #f0f0f0;
+  outline: #e8e8ff;
+  background-color: rgba(240, 240, 240, 0);
+}
+.image-card .btn-overlay:hover {
+  background-color: rgba(240, 240, 240, 0.4784313725);
 }
 .image-card .titre-image {
   position: absolute;
@@ -12148,4 +12190,15 @@ footer {
 
 .empty {
   visibility: hidden; /* Placeholder to offset the start day */
+}
+
+.form-label {
+  color: black;
+}
+
+a p {
+  color: black;
+}
+a:hover p {
+  color: rgb(80, 80, 80);
 }/*# sourceMappingURL=main.css.map */

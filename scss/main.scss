@@ -40,9 +40,7 @@
             justify-content: center;
             align-items: center;
 
-            .btn{
-                margin-top: 50px;
-            }
+
         }
 }
 .hero-scene h1{ 
@@ -56,8 +54,30 @@
 }
 
 //////BUTTONS
+.home-btn{ 
+    position: relative;
+ 
+    background-color: #F3A140;
+    
+    border: none; 
+    width: 180px;
+    height: 40px;
+    p{
+        position: absolute;
+        color: #f0f0f0;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%); 
+    }
+    &:hover{
+        background-color: #c78534;
+        p{
 
-.btn{  
+        color: #f0f0f0;
+        }
+    }
+}
+/*.btn{  
     
     border-radius: 5px;
     color: $btn-primary;
@@ -71,7 +91,7 @@
         font-size: 16px; 
     }
     
-}
+}*/
 
 
 .absolute{
@@ -119,7 +139,8 @@ footer{
     background: #F3A140;
 }
  
-
+//////GALERIE
+/// 
 .image-card{
     position:relative;
     &:hover{
@@ -127,19 +148,46 @@ footer{
             color:rgb(255, 255, 255);
             opacity: 1;
         }
+        .action-image-buttons{ 
+            opacity: 1;
+            
+        }
         img{
             filter: brightness(0.3);
             
         }
-    
+
+
     } 
+    .action-image-buttons{
+        position : absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        transition: all 0.3s;
+
+
+
+    }
     img{
         filter: brightness(1);
         transition: all 0.3s;
     }
+    .btn-overlay{
+        border: 2px solid; 
+        color:#f0f0f0;
+        outline: #e8e8ff;
+        background-color: #f0f0f000; 
+        &:hover{
+            background-color: #f0f0f07a;
+        }
+    }
 
-
-    .titre-image{
+.titre-image{
         position: absolute;
         top:50%;
         left:50%;
@@ -206,3 +254,23 @@ footer{
   .empty {
     visibility: hidden; /* Placeholder to offset the start day */
   }
+
+
+  //Connection
+  .form-label{
+    color:black; 
+  }
+
+  a{
+    p{
+        color:black; 
+    }
+    &:hover{
+        p{
+            color:rgb(80, 80, 80); 
+        }
+    }
+    
+  }
+
+
