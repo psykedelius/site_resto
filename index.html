@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/main.css"/>
-    <link rel="stylesheet" href="styles/header.css"/>
-    <link rel="stylesheet" href="styles/home.css"/>
+    <link rel="stylesheet" href="styles/header.css"/> 
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,18 +51,22 @@
 
  
   <footer class="container-fluid container-lg mx-auto py-1 ">
-      <div class="row text-center section-title">Nos Horaires</div>
-      <div class="row text-center section-desc">Du mardi au dimanche</div>
+    <div class="row text-center section-title text-dark" >Nos horaires</div>
+      <div class="row cols-3 text-center section-desc ">
+        <div class="col">Du mardi au dimanche</div>
+        <div class="col">12:00-14:00</div>
+        <div class="col">18:00-23:00</div>
+      </div>
+      
       <div class="row align-items-center section-desc">
-        <div class="col-6 px-4 text-center">Bistro breton<br>
-          12 rue du bar<br>
-          35000 Rennes<br>
+        <div class="col-6 px-4 mt-3 text-center">Bistro breton<br>
+          12 rue du bar, 35000 Rennes<br> 
           06.20.21.21.21</div>
         <div class="col text-center ">contact@bistrobreton.com</div> 
       </div> 
 </footer>
-
-<script type="module" src = "Router/router.js"></script> 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src = "Router/router.js"></script> 
+
 </body>
 </html>

@@ -121,7 +121,7 @@
     font-family: "Poppins", serif;
     font-weight: 200;
     font-style: normal; 
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
     justify-content: center;
     color: white;
 } 
@@ -168,10 +168,7 @@ footer{
         display: flex;
         justify-content: space-between;
         opacity: 0;
-        transition: all 0.3s;
-
-
-
+        transition: all 0.3s; 
     }
     img{
         filter: brightness(1);
@@ -198,6 +195,7 @@ footer{
 
 }
 
+////RESERVATIONS
 .calendar-days{
     position: relative;
     display: flex;
@@ -255,6 +253,19 @@ footer{
     visibility: hidden; /* Placeholder to offset the start day */
   }
 
+  .allreservations{
+    a{
+        display: block;
+        color: $black;
+        padding:10px;
+    }
+    &:hover{
+        p{
+            color:rgb(255, 0, 0); 
+        }
+    }
+
+}
 
   //Connection
   .form-label{
