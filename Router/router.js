@@ -29,13 +29,13 @@ const LoadContentPage = async () => {
   
   //vérifier les droits d'accès à la page
   const allRolesArray = actualRoute.authorize;
-  console.log("LoadContentPage allRolesArray ",allRolesArray);
+  console.log("LoadContentPage allowedRoles: ",allRolesArray," ",allRolesArray.length ," UserRole: ",getRole()," connection status: ",isConnected());
   //si la page nécessite un rôle
-  if(allRolesArray.lenght >0){
+  if(allRolesArray.length  > 0){
     //si déconnecté
+    console.log("la page nécessite un rôle");
     if(allRolesArray.includes("disconnected"))
-      {
-        console.log("disconnected");
+      { 
         if(isConnected())
           {
             window.location.replace("/");
