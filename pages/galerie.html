@@ -14,11 +14,15 @@
     <div class="text-center" data-show='admin'>
         <a href="#" type="button" class="btn home-btn" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><p>Ajouter une photo</p></a>
     </div>
-    <div class="row row-cols-2 row-cols-lg-3">
+    <div class="row row-cols-2 row-cols-lg-3" id="galerie-container">
         <div class="col p-3">
-            <div class="image-card text-white">
-                <img src="../img/home.jpg" class="rounded w-100">
-                <p class="titre-image">Titre</p>
+            <div class="image-card  text-white">
+                <img src="../img/home.jpg" class="section-img rounded w-100">
+                <p class="titre-image" data-show='admin'>Titre</p>
+                <button type="button" class="btn btn-fillDiv" data-show='disconnected,client' data-bs-toggle="modal" data-bs-target="#viewerPhotoModal">
+                    <p class="titre-image">Titre</p>
+                </button>
+                
                 <div class="action-image-buttons">
                     <button type="button" class="btn btn-overlay"  data-show='admin' data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square "></i></button>
                     <button type="button" class="btn btn-overlay"  data-show='admin' data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
@@ -27,7 +31,7 @@
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
-                <img src="../img/home.jpg" class="rounded w-100">
+                <img src="../img/cheminee.jpg" class="section-img rounded w-100">
                 <p class="titre-image">Titre</p>
                 <div class="action-image-buttons">
                     <button type="button" class="btn btn-overlay" data-show='admin' data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
@@ -37,7 +41,7 @@
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
-                <img src="../img/home.jpg" class="rounded w-100">
+                <img src="../img/reservation.jpg" class="section-img rounded w-100">
                 <p class="titre-image">Titre</p>
                 <div class="action-image-buttons">
                     <button type="button" class="btn btn-overlay" data-show='admin' data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
@@ -47,7 +51,7 @@
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
-                <img src="../img/home.jpg" class="rounded w-100">
+                <img src="../img/accueil.jpg" class="section-img rounded w-100">
                 <p class="titre-image">Titre</p>
                 <div class="action-image-buttons">
                     <button type="button" class="btn btn-overlay" data-show='admin' data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
@@ -57,7 +61,7 @@
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
-                <img src="../img/home.jpg" class="rounded w-100">
+                <img src="../img/home.jpg" class="section-img rounded w-100">
                 <p class="titre-image">Titre</p>
                 <div class="action-image-buttons">
                     <button type="button" class="btn btn-overlay" data-show='admin' data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
@@ -67,7 +71,7 @@
         </div>
         <div class="col p-3">
             <div class="image-card text-white">
-                <img src="../img/home.jpg" class="rounded w-100">
+                <img src="../img/home.jpg" class="section-img rounded w-100">
                 <p class="titre-image">Titre</p>
                 <div class="action-image-buttons">
                     <button type="button" class="btn btn-overlay" data-show='admin' data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
@@ -81,7 +85,22 @@
     </div>
 
 </div>
- 
+ <!-- Modal img fullScreen -->
+<div class="modal fade" id="viewerPhotoModal" tabindex="-1" aria-labelledby="viewerPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="viewerModalLabel">viewer Photo</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="rounded w-100">
+                    <img src="../img/cheminee.jpg" class="img-fluid rounded w-100">
+                </div>
+        </div>
+    </div>
+</div> 
+
 <!-- Modal edition -->
 <div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -131,4 +150,5 @@
         </div>
     </div>
 </div> 
+
 </div>

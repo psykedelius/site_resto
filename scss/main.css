@@ -11983,8 +11983,8 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/home.jpg);
   background-size: cover;
+  background-image: url(../img/home.jpg);
   padding: 0px;
   margin: 0px;
   border: none;
@@ -12080,7 +12080,8 @@ textarea.form-control-lg {
 }
 
 .section-img {
-  height: 100%;
+  height: 350px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 0px;
@@ -12105,6 +12106,15 @@ footer {
 }
 .image-card:hover img {
   filter: brightness(0.3);
+}
+.image-card .btn-fillDiv {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-color: rgba(240, 240, 240, 0);
 }
 .image-card .action-image-buttons {
   position: absolute;
